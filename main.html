@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Delivery</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Bootstrap-->
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid"><!--чтобы справа было-->
+            <!--возможно стоит стоит сделать кнопкой-->
+            <!-- <a class="navbar-brand" href="#">Delivery.Кушац</a> -->
+            <div class="navbar-header">
+                <a href="" role="button" class="navbar-brand" >Блог №415</a>
+            </div>
+            <!-- если надо чтобы кнопки при сужении экрана были слева, убери первый коллапс -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="menu" aria-current="page" href="#"  role="button">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="newpost" aria-current="page" href="#"  role="button">Написать пост</a>
+                    </li>
+                </ul>
+                <div id="info">
+                    <button class="btn btn-outline-primary enter" id="Autorization">Вход</button>
+                </div>
+                <script src=""></script>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="flex-grow-1 d-flex  flex-column align-items-center px-4">
+    <form class="card mt-3 w-75">
+        <div class="card-header">
+            Фильтры
+        </div>
+        <div class="card-body row row-gap-3">
+            <div class="col-md-6">
+                <div class="form mb-3">
+                    <label for="authorfilter">Поиск по имени автора:</label>
+                    <input type="text" class="form-control" id="authorfilter" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="tagsfilter">Поиск по тегам:</label>
+                    <div class="overflow-auto" style="height: 100px; width: 100%">
+                        <div class="list-group" id="tagsfilter">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                1 чекбокс
+                            </label>
+                            <label class="list-group-item ">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                2 чекбокс
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                3 чекбокс
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                4 чекбокс
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <label for="dropdown">Сортировка по:</label>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" id="dropdown" style="width: 100%" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form">
+                    <label for="readtimeot">Время чтения от:</label>
+                    <input type="text" class="form-control" id="readtimeot" placeholder="">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form">
+                    <label for="readtimedo">Время чтения до:</label>
+                    <input type="text" class="form-control" id="readtimedo" placeholder="">
+                </div>
+            </div>
+            <div class="row col-md-4">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Только мои группы</label>
+                    </div>
+                <button class="btn btn-primary" type="submit">Поиск</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="card mt-3 w-75">
+        <div class="card-body">
+            dfd
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    item1
+                </li>
+                <li class="list-group-item">
+                    imet 2
+                </li>
+            </ul>
+        </div>
+        <div class="card-footer row-gap-5">
+            <img src="icons/heart.png" class="h-25 w-25">
+            <img src="icons/comment.png" class="h-25 w-25">
+        </div>
+    </div>
+
+</section>
+
+<footer class="bg-expand-lg bg-footer-tertiary py-3 mt-auto bg-light shadow-lg">
+    <div class="container">
+        <div class="col-12">
+            <p class="text-start">© 2023 - Блог №415</p>
+        </div>
+    </div>
+</footer>
+
+<script defer src=""></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
